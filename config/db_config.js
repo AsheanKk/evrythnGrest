@@ -1,8 +1,6 @@
 "use strict";
 
 const Sequelize = require('sequelize');
-const $ = require('jquery');
-
 
 
 module.exports = new Sequelize('grest_db', 'user', 'user@2021', {
@@ -17,4 +15,4 @@ module.exports = new Sequelize('grest_db', 'user', 'user@2021', {
 
 const superUser = require('../models/super_user.js');
 
-Memo.sync({ force: false })
+superUser.sync({ force: false });

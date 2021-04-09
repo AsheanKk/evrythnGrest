@@ -3,7 +3,7 @@ const db = require('../config/db_config');
 
 
 
-const Memo = db.define('superUser', {
+const superUser = db.define('superUser', {
 
     name: {
         type: Sequelize.STRING(30),
@@ -16,7 +16,7 @@ const Memo = db.define('superUser', {
     },
 
     password: {
-        type: Sequelize.String(64),
+        type: Sequelize.STRING(64),
         filed: 'password'
     },
 

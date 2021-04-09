@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const bodyParser = require('body-parser');
+const routes = require('./routes/req_manager')
 
 //ste the statics
 app.use(bodyParser.json())
@@ -22,7 +24,7 @@ app.use(
 
 
 //Database
-const db = require('./config/db_manager')
+const db = require('./config/db_config.js')
 
 
 //Test db
